@@ -1,5 +1,29 @@
-# Data Essentials L3
-## Module 2: From Data to Insight
+<!-- .slide: data-state="overview" -->
+# From Data to Insight
+### Day 1
+* **Session** 9:30-16:30
+---
+
+### This session is going to start at **9:30am**
+* Check your audio is working
+* You need to plug in your speakers/headphones before you start the session.
+* If you cannot hear your tutor when they are talking, you need to leave the session and log back in again.
+* If you still cannot hear, let your tutor know by writing them a message in the chat box.
+* If you are still experiencing problems
+* Try disconnecting and reconnecting your PC/laptop to the internet.
+* Call **0345 074 7958** to speak to the **QAHE Online Learning** support team.
+* You can also email the team on **QAHEOnlineLearning@qa.com**
+
+---
+
+# We are recording now 🔴 <!-- .element style="text-align:center" -->
+
+---
+
+<!-- .slide: data-state="overview" -->
+# From Data to Insight
+### Day 1
+* **Session** 9:30-16:30
 
 ---
 
