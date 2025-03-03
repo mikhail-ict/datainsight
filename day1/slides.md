@@ -140,7 +140,7 @@ Alternatively, the tutor could mention KSBs a few at a time on a per-activity ba
 ## Types of Data File 📂
 | KSB     |                                                              |
 |---------|--------------------------------------------------------------|
-| **K4₂** | Data formats and their importance for analysis. Management and presentation tools to visualise and review data characteristics. Communication tools and technologies for collaborative working. |
+| **K4₂** | Data formats and their importance for analysis.<br>Management and presentation tools to visualise and review data characteristics.<br>Communication tools and technologies for collaborative working. |
 
 ---
 

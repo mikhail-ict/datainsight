@@ -1,0 +1,11 @@
+﻿Data,Data,Data,Data
+8,Unique 1,Complete,5
+7,Duplicate 1,Pending,2.5
+5,Unique 2,Pending,5
+6,Duplicate 1,Error,1
+7,Duplicate 2,Complete,3
+18,Unique 3,Complete,0.5
+7,Duplicate 2,Pending,4
+3,Duplicate 1,Complete,3
+3,Unique 4,Pending,4.5
+5,Unique 5,Error,3
