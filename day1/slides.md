@@ -559,7 +559,7 @@ In this activity, we will learn how to work with Excel’s formulas and function
 * Data input.
 * Sorting data.
 * `IF`, `COUNTIF`, `SUM IF`.
-* `AND,` `OR`.
+* `AND`б `OR`.
 
 </div><div style="float:right;width:calc(50% - 10px);padding-left:10px;">
 
