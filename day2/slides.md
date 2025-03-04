@@ -170,7 +170,7 @@ Note:
 ---
 
 ## XLOOKUP()
-![](slides/image%204.png)<!-- .element: width="7 0%"-->
+![](slides/image%204.png)<!-- .element: width="70%"-->
 
 | Open files                                       |
 |--------------------------------------------------|
