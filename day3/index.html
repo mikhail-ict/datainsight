@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Data</title>
+    <link rel="stylesheet" href="../reveal/dist/reset.css">
+    <link rel="stylesheet" href="../reveal/dist/reveal.css">
+    <link rel="stylesheet" href="../plugins/chalkboard/style.css">
+    <link rel="stylesheet" href="../tue2018.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../monokai.css">
+		<style>
+		  .mermaid svg{
+		    transform-origin: top left; /* Ensure scaling starts from the top-left corner */
+		  }
+			/* Adjust text alignment for the added padding */
+			.mermaid .label {
+			  font-family: "Figtree", sans-serif; /* Optional: Enforce custom font */
+			  font-size: 16px; /* Optional: Adjust font size */
+				font-weight: bold;
+			}
+			.mermaid .label .edgeLabel {
+				font-weight: normal;
+			}
+			.palette {
+			  display: none !important;
+			  visibility: hidden !important;
+			}
+		</style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="slides.md" data-separator="^---$" data-separator-vertical="^--$" data-separator-notes="^Note:" data-charset="utf-8">
+          <div class="grid-wrapper"></div>
+        </section>
+      </div>
+    </div>
+    <!-- <script src="../head.min.js"></script> -->
+    <script src="../reveal/dist/reveal.js"></script>
+    <script src="../reveal/plugin/notes/notes.js"></script>
+    <script src="../reveal/plugin/markdown/markdown.js"></script>
+    <script src="../reveal/plugin/highlight/highlight.js"></script>
+    <script src="../plugins/chalkboard/plugin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-mermaid-plugin@11.4.1/plugin/mermaid/mermaid.min.js"></script>
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        controls: true,
+        controlsTutorial: true,
+        // controlsLayout: 'bottom-right',
+        controlsBackArrows: 'faded',
+        progress: true,
+        slideNumber: false,
+        history: true,
+        keyboard: true,
+        overview: true,
+        center: true,
+        touch: true,
+        loop: false,
+        rtl: false,
+        shuffle: false,
+        fragments: true,
+        fragmentInURL: false,
+        embedded: false,
+        help: true,
+        showNotes: false,
+        autoPlayMedia: false,
+        autoSlide: 0,
+        autoSlideStoppable: true,
+        autoSlideMethod: Reveal.navigateNext,
+        defaultTiming: 120,
+        mouseWheel: false,
+        hideAddressBar: true,
+        previewLinks: false,
+        transition: 'default',
+        transitionSpeed: 'default',
+        backgroundTransition: 'default',
+        viewDistance: 3,
+        parallaxBackgroundImage: '',
+        parallaxBackgroundSize: '',
+        parallaxBackgroundHorizontal: 0,
+        parallaxBackgroundVertical: 0,
+        display: 'block',
+        hash: true,
+        chalkboard: {
+          boardmarkerWidth: 3,
+          chalkWidth: 7,
+          chalkEffect: 1.0,
+          storage: null,
+          src: null,
+          readOnly: undefined,
+          transition: 800,
+          theme: "chalkboard",
+          background: ['rgba(127,127,127,.1)', path + 'img/blackboard.png'],
+          grid: {
+            color: 'rgb(50,50,10,0.5)',
+            distance: 80,
+            width: 2
+          },
+          eraser: {
+            src: path + 'img/sponge.png',
+            radius: 20
+          },
+          boardmarkers: [{
+            color: 'rgba(30,144,255, 1)',
+            cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'
+          }, {
+            color: 'rgba(220,20,60,1)',
+            cursor: 'url(' + path + 'img/boardmarker-red.png), auto'
+          }, {
+            color: 'rgba(50,205,50,1)',
+            cursor: 'url(' + path + 'img/boardmarker-green.png), auto'
+          }, {
+            color: 'rgba(255,140,0,1)',
+            cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'
+          }, {
+            color: 'rgba(150,0,20150,1)',
+            cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'
+          }, {
+            color: 'rgba(255,220,0,1)',
+            cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'
+          }, {
+            color: 'rgba(100,100,100,1)',
+            cursor: 'url(' + path + 'img/boardmarker-black.png), auto'
+          }],
+          chalks: [{
+            color: 'rgba(255,255,255,0.5)',
+            cursor: 'url(' + path + 'img/chalk-white.png), auto'
+          }, {
+            color: 'rgba(96, 154, 244, 0.5)',
+            cursor: 'url(' + path + 'img/chalk-blue.png), auto'
+          }, {
+            color: 'rgba(237, 20, 28, 0.5)',
+            cursor: 'url(' + path + 'img/chalk-red.png), auto'
+          }, {
+            color: 'rgba(20, 237, 28, 0.5)',
+            cursor: 'url(' + path + 'img/chalk-green.png), auto'
+          }, {
+            color: 'rgba(220, 133, 41, 0.5)',
+            cursor: 'url(' + path + 'img/chalk-orange.png), auto'
+          }, {
+            color: 'rgba(220,0,220,0.5)',
+            cursor: 'url(' + path + 'img/chalk-purple.png), auto'
+          }, {
+            color: 'rgba(255,220,0,0.5)',
+            cursor: 'url(' + path + 'img/chalk-yellow.png), auto'
+          }]
+        },
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealNotes,
+          RevealChalkboard,
+          RevealMermaid
+        ],
+        mermaid: {
+          theme: "default", // Mermaid theme
+          startOnLoad: true,
+          themeVariables: {
+				    fontFamily: "'Figtree', sans-serif",
+				    fontSize: "20px",
+				    fontWeight: "bold", // Make font globally bold
+				    edgeLabelBackground: "#00edb5",
+				    nodePadding: 20,
+				    nodeSpacing: 50,
+				    clusterPadding: 30,
+          }
+        }
+      });
+			// Shows the slide number using default formatting
+			Reveal.configure({
+			  slideNumber: true,
+			  slideNumber: 'c',
+			  showSlideNumber: 'all'
+			});
+    </script>
+  </body>
+</html>
